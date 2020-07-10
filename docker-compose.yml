@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  sql-server:
+    build:
+      context: .
+      dockerfile: data/Dockerfile
+    ports:
+    - "1433:1433"
+    container_name: sql-server
